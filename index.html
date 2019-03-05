@@ -3,43 +3,211 @@
 
   <head>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-    <title>
-      <h2>Bienvenido a</h2>
-      <h1>La Cantina di Gabriello</h1>
-    </title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Srisakdi" rel="stylesheet">
+    <title>La Cantina di Gabriello</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.min.css">
     <link href="public/style.css" type="text/css" rel="stylesheet">
   </head>
 
 <body>
 
   <!-- Header -->
-  <header class="container">
+  <header class="container" id="banner">
       <nav class="header">
         <div class="logo">
-          <a href="./index.html"><img src="" class="frame" height="100" width="auto"></a>
-          <ul>
-            <li class="frame" id="reservar">RESERVAR</li>
-            <li class="frame" id="carta">CARTA</li>
-            <li class="frame" id="vinos">VINOS</li>
-            <li class="frame" id="restuarante">EL RESTAURANTE</li>
-            <li class="frame" id="nosotros">NOSOTROS</li>
+        <img src="img/Logo.png" class="frame" width="300px" height="200px"></a>
+          <ul class="pointer">
+            <li id="reservar">RESERVAR</li>
+            <li id="carta">CARTA</li>
+            <li id="vinos">VINOS</li>
+            <li id="restuarante">EL RESTAURANTE</li>
+            <li id="nosotros">NOSOTROS</li>
 
           </ul>
+          <div class="logoBig">
+            <img src="img/Logo.png" width="1100px" height="800px">
+          <h2>HORARIO</h2>
+            <p>Lunes a viernes: <span>13:30 - 16:00,  20:30 - 23:30</span></p>
+            <p>Domingos: <span>13:30 - 16:00</span></p>
+          </div>
+
 
           </nav>
 
   </header>
 
+  <!-- Carta y Vinos -->
+  <div class="carta" style="height: 1000px; background:url(img/Blanca2.jpg)">
+      <h2>PLATOS:</h2>
+        <ul class="pointer">
+          <li id="entrantes">Entrantes</li>
+          <li id="primeros">Pizzas</li>
+          <li id="segundos">Pastas</li>
+          <li id="postres">Lasañas</li>
+          <li id="postres">Carnes</li>
+          <li id="postres">Postres</li>
+        </ul>
+
+
+      <div class="slide" id="entrantesSlide">
+          <div>
+            <img src="img/1.jpg" height="300px" width="300px" >
+          </div>
+          <div>
+            <img src="img/2.jpg" height="300px" width="300px">
+          </div>
+          <div>
+            <img src="img/3.jpg" height="300px" width="300px">
+          </div>
+          <div>
+          </div>
+    </div>
+
+    <div class="vinos">
+      <h2>VINOS:</h2>
+        <ul class="pointer">
+         <li>Tintos</li>
+         <li>Blancos</li>
+        </ul>
+
+    </div>
+
+          <div class="slide" id="entrantesSlide">
+              <div>
+                <img src="img/1.jpg" height="300px" width="300px" >
+              </div>
+              <div>
+                <img src="img/2.jpg" height="300px" width="300px">
+              </div>
+              <div>
+                <img src="img/3.jpg" height="300px" width="300px">
+              </div>
+              <div>
+              </div>
+        </div>
+
+  </div>
+
+<!-- Nosotros -->
+  <div class="nosotros" style="height: 600px; width: cover; background:url(img/bodega1.jpg) no-repeat black">
+    <h2>La bodega</h2>
+      <p>Esta bodega...</p>
+  </div>
+
+<!-- El Restaurante -->
+
+  <div class="elRestaurante">
+    <h2>EL RESTAURANTE:</h2>
+      <img src="img/restaurante.jpg" height="800px" width="1400">
+  </div>
+
+<!-- Reservar -->
+
+  <div class="reservar">
+
+        <table>
+
+          <tr>
+            <th>
+              DATOS DE LA RESERVA
+            </th>
+          </tr>
+
+          <tr>
+            <td>
+              <p>Numero de Personas:</p>
+              <form>
+                <select type="text" class="pointer"  id="numPersonas" name="numPersonas">
+                  <option id="numPlaceholder" value="" hidden="">2</option>
+                  <option value="">3</option>
+                  <option value="">4</option>
+                  <option value="">5</option>
+                  <option value="">6</option>
+                  <option value="">7</option>
+                  <option value="">8</option>
+                  <option value="">9</option>
+                  <option value="">10</option>
+
+                </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <p id="turno">Turnos disponibles:</p>
+              <form>
+                <select type="text" class="pointer"  id="turnos" name="numPersonas">
+                  <option id="turnPlaceholder" value="" hidden="">13:30</option>
+                  <option value="">14:00</option>
+                  <option value="">14:30</option>
+                  <option value="">15:00</option>
+                  <option value="">15:30</option>
+                  <option value="">16:00</option>
+
+                </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td id="tdComment">
+              <p>Comentarios:</p>
+              <form>
+                <input placeholder="comentarios..." id="comentarios" type="name" name="name" pattern="[A-Za-z0-9]+">
+
+            </td>
+          </tr>
+
+
+
+
+    </table>
+  </div>
+
+<!-- Contactos -->
+
+    <div class="contacto">
+      <h2>Alguna pregunta, Contactanos</h2>
+
+        <section>
+          <form>
+            <input placeholder="Tu nombre..." type="name" name="name" pattern="[A-Za-z0-9]+">
+
+        <section>
+          <form>
+            <input placeholder="Email..." type="email" name="email" pattern="[A-Za-z0-9]+">
+
+        <section>
+          <form>
+            <input placeholder="Mensaje" type="comment" name="comment" pattern="[A-Za-z0-9]+">
+    </div>
+
 
   </body>
 
 <footer>
+  <div class="logoBig" style="height: 1200px;">
+    <img src="img/Logo.png" width="1100px" height="800px">
+      <h2>direccion</h2>
+        <p>Calle Constitucion, 337</p>
+        <p>47001 Valladolid</p>
+      <h2>numero de reserva</h2>
+        <p>972 31 31 32</p>
+      <h2>HORARIO</h2>
+        <p>Lunes a viernes: <span>13:30 - 16:00,  20:30 - 23:30</span></p>
+        <p>Domingos: <span>13:30 - 16:00</span></p>
 
+  </div>
+
+  <div class="copyright"></div>
 </footer>
 <script
   src="https://code.jquery.com/jquery-3.3.1.js"
   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
   crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.js"></script>
   <script type="text/javascript" src="public/main.js"></script>
 
 </html>
