@@ -1,0 +1,388 @@
+@font-face {
+  font-family: "Lucida Handwriting Italic";
+  src: url("../public/fonts/Lucida Handwriting Italic.ttf")
+}
+
+html {
+  height: 6000px;
+}
+
+
+body {
+
+  background-color: white;
+  background-size: contain;
+  height: 100%;
+  width: 100%;
+
+
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+#banner {
+
+  height: 1000px;
+  background-image: url("../img/pizarra4.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index: 2px;
+  background-repeat:no-repeat;
+  position: relative;
+  padding-bottom: 100px;
+  display: hidden;
+}
+
+.logo img {
+
+  position: relative;
+  left: 300px;
+
+}
+
+.logoBig img {
+
+  position: relative;
+  left: 400px;
+
+}
+
+h2 {
+
+  position: relative;
+  font-size: 40px;
+}
+nav h2 {
+
+  text-align: center;
+  bottom: 300px;
+  font-family: 'Ubuntu', sans-serif;
+  opacity: 0.9;
+  color: white;
+}
+
+nav p {
+  position: relative;
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Ubuntu', sans-serif;
+  opacity: 0.9;
+  bottom: 300px;
+  color: white;
+}
+
+nav span {
+
+  position: relative;
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Ubuntu', sans-serif;
+  opacity: 0.7;
+  color: white;
+}
+
+nav li {
+
+  display: inline;
+  margin-right: 70px;
+}
+
+
+
+nav ul {
+  position: relative;
+  overflow: hidden;
+  float: right;
+  right: 500px;
+  top: 50px;
+  height: 30px;
+
+}
+
+.header li {
+
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 17px;
+  color: #dcdfe2;
+  opacity: 0.9;
+
+}
+
+.header li:hover {
+
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 17px;
+  color: #fcda9a;
+  opacity: 0.9;
+
+}
+
+.carta h2 {
+  width: 175px;
+  height: 50px;
+  color: #ffc65c;
+  font-family: "Lucida Handwriting Italic";
+  left: 300px;
+  top: 20px;
+  padding-bottom: 1px;
+  border-bottom: 3px solid #ffc65c;
+}
+
+.carta {
+  position: relative;
+  bottom: 30px;
+}
+
+.carta ul {
+
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+  float: right;
+  bottom: 70px;
+  right: 250px;
+  height: 30px;
+}
+
+.carta li {
+
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 30px;
+  color: #fcda9a;
+  display: inline-flex;
+  margin: 0 30px;
+
+}
+
+.carta li:hover {
+
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 30px;
+  color: #fcda9a;
+  opacity: 0.9;
+  display: inline-flex;
+}
+
+.slide {
+  position: relative;
+  top: 70px;
+}
+
+#entrantesSlide {
+
+
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.vinos h2 {
+
+  top: 50px;
+}
+
+.vinos ul {
+
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+  float: right;
+  bottom: 70px;
+  right: 910px;
+  height: 30px;
+}
+
+.nosotros {
+  position: relative;
+  bottom: 70px;
+}
+
+.nosotros h2 {
+
+  top: 20px;
+  left: 1090px;
+  color: white;
+  font-family: 'Srisakdi', cursive;
+  font-size: 50px;
+  font-weight: 200;
+}
+
+.nosotros p {
+  position: relative;
+  top: 20px;
+  left: 1100px;
+  color: white;
+  font-family: 'Montserrat' sans-serif;
+}
+
+.elRestaurante h2 {
+
+  width: 175px;
+  height: 50px;
+  color: #ffc65c;
+  font-family: "Lucida Handwriting Italic";
+  display: inline;
+  font-size: 35px;
+  left: 20px;
+  bottom: 750px;
+  padding-bottom: 1px;
+  border-bottom: 3px solid #ffc65c;
+}
+
+.elRestaurante img {
+
+  z-index: 2px;
+  background-repeat:no-repeat;
+  position: relative;
+  top: 150px;
+  right: 70px;
+  display: hidden;
+}
+
+.reservar {
+
+  position: relative;
+  height: 1000px;
+  background-color: black;
+  top: 250px;
+}
+
+.reservar p {
+
+  position: relative;
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Ubuntu', sans-serif;
+  right: 80px;
+  top: 5px;
+  opacity: 0.9;
+  color: white;
+}
+
+table {
+
+  position: relative;
+  left: 600px;
+  top: 300px;
+}
+
+th {
+
+  height: 80px;
+  color: white;
+  border: 1px solid blue;
+  background-color: rgba(26, 34, 68, 0.1);
+  font-family: 'Montserrat' sans-serif;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+td {
+
+  width: 400px;
+  height: 60px;
+  color: white;
+  border: 1px solid blue;
+  background-color: rgba(26, 34, 68, 0.3);
+
+
+}
+
+td form {
+
+  position: relative;
+  left: 300px;
+  bottom: 35px;
+}
+
+#numPersonas {
+
+  width: 50px;
+}
+
+#turnos {
+
+  position: relative;
+  left: 280px;
+  bottom: 35px;
+  width: 70px;
+}
+
+#turno {
+
+  position: relative;
+  right: 90px;
+}
+
+#comentarios {
+
+  position: relative;
+  left: 180px;
+  bottom: 40px;
+  width: 200px;
+  height: 70px;
+}
+
+#tdComment  {
+
+  width: 400px;
+  height: 98px;
+  color: white;
+  border: 1px solid blue;
+  background-color: rgba(26, 34, 68, 0.3);
+}
+
+#tdComment p {
+
+  position: relative;
+  right: 120px;
+  bottom: 35px;
+}
+
+.contacto {
+
+  position: relative;
+  height: 1000px;
+  background-color: white;
+  top: 250px;
+}
+
+footer {
+
+  position: relative;
+  height: 1200px;
+  background-color: black;
+  top: 250px;
+}
+
+footer h2 {
+
+  text-align: center;
+  bottom: 300px;
+  font-family: 'Ubuntu', sans-serif;
+  opacity: 0.9;
+  color: white;
+}
+
+
+footer p {
+
+  position: relative;
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Ubuntu', sans-serif;
+  opacity: 0.9;
+  bottom: 300px;
+  color: white;
+}
+
+footer .copyright {
+  background-color: black;
+  display: flex;
+  height: 100px;
+  border-top: 2px solid blue;
+}
