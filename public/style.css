@@ -1,20 +1,24 @@
+
 @font-face {
   font-family: "Lucida Handwriting Italic";
-  src: url("../public/fonts/Lucida Handwriting Italic.ttf")
+  src: url("../public/fonts/Lucida Handwriting Italic.ttf");
 }
 
 html {
-  height: 6000px;
-}
 
+  width: 100%;
+  height: 5900px;
+  background-color: white;
+  background-size: contain;
+
+}
 
 body {
 
-  background-color: white;
-  background-size: contain;
-  height: 100%;
   width: 100%;
-
+  height: auto;
+  display: block;
+  overflow-x: hidden;
 
 }
 
@@ -100,6 +104,7 @@ nav ul {
   right: 500px;
   top: 50px;
   height: 30px;
+  margin-bottom: 0px;
 
 }
 
@@ -132,6 +137,11 @@ nav ul {
   border-bottom: 3px solid #ffc65c;
 }
 
+.vinos h2 {
+  width: 150px;
+  height: 50px;
+}
+
 .carta {
   position: relative;
   bottom: 30px;
@@ -152,7 +162,7 @@ nav ul {
 
   font-family: 'Ubuntu', sans-serif;
   font-size: 30px;
-  color: #fcda9a;
+  color: #8c763b;
   display: inline-flex;
   margin: 0 30px;
 
@@ -167,13 +177,97 @@ nav ul {
   display: inline-flex;
 }
 
-.slide {
+.slider {
   position: relative;
-  top: 70px;
+  top: 40px;
+  width: 100%;
+  margin: 100 auto;
+
 }
+
+.slider2 {
+  position: relative;
+  top: 40px;
+  width: 100%;
+  margin: 100 auto;
+
+
+}
+
 
 #entrantesSlide {
 
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.slick-prev:before {
+
+  position: relative;
+  right: 30px;
+}
+.slick-prev:before, .slick-next:before{
+
+    color: #3d596e;
+    font-size: 35px;
+    opacity: 0.5
+}
+
+.container2 {
+
+  position: relative;
+  bottom: 50px;
+  left: 100px;
+  width: 1700px;
+
+}
+
+
+.container3 {
+  position: relative;
+  left: 100px;
+  width: 1700px;
+
+}
+
+.container4 {
+  position: relative;
+  bottom: 50px;
+  left: 300px;
+  width: 1400px;
+  height: 800px;
+}
+
+
+/* the slides */
+  .slider3 .slick-slide {
+    margin-left: 100px;
+  }
+
+  /* the parent */
+  .slider3 .slick-list {
+    margin-left:-100px;
+  }
+
+   .slider3 .slick-next:before{
+
+      position: relative;
+      color: #3d596e;
+      font-size: 35px;
+      opacity: 0.5
+  }
+
+  .slider3 .slick-prev:before {
+
+    position: relative;
+    right: 160px;
+    color: #3d596e;
+    font-size: 35px;
+    opacity: 0.5
+  }
+
+#slider3 img {
 
   display: flex;
   justify-content: space-around;
@@ -191,7 +285,7 @@ nav ul {
   overflow: hidden;
   display: inline-flex;
   float: right;
-  bottom: 70px;
+  bottom: 50px;
   right: 910px;
   height: 30px;
 }
@@ -219,6 +313,11 @@ nav ul {
   font-family: 'Montserrat' sans-serif;
 }
 
+.elRestaurante {
+
+  height: 600px;
+}
+
 .elRestaurante h2 {
 
   width: 175px;
@@ -228,7 +327,6 @@ nav ul {
   display: inline;
   font-size: 35px;
   left: 20px;
-  bottom: 750px;
   padding-bottom: 1px;
   border-bottom: 3px solid #ffc65c;
 }
@@ -266,7 +364,7 @@ nav ul {
 table {
 
   position: relative;
-  left: 600px;
+  left: 750px;
   top: 300px;
 }
 
@@ -274,7 +372,7 @@ th {
 
   height: 80px;
   color: white;
-  border: 1px solid blue;
+  border: 1px solid #ffc65c;
   background-color: rgba(26, 34, 68, 0.1);
   font-family: 'Montserrat' sans-serif;
   font-size: 25px;
@@ -286,7 +384,7 @@ td {
   width: 400px;
   height: 60px;
   color: white;
-  border: 1px solid blue;
+  border: 1px solid #ffc65c;
   background-color: rgba(26, 34, 68, 0.3);
 
 
@@ -332,7 +430,7 @@ td form {
   width: 400px;
   height: 98px;
   color: white;
-  border: 1px solid blue;
+  border: 1px solid #ffc65c;
   background-color: rgba(26, 34, 68, 0.3);
 }
 
@@ -343,18 +441,115 @@ td form {
   bottom: 35px;
 }
 
+#datosContacto p {
+
+  margin: 0 auto;
+}
+
+
+#nombre {
+  position: relative;
+  left: 160px;
+  bottom: 25px;
+  width: 210px;
+  height: 40px;
+  }
+
+  .nombre p {
+
+    position: relative;
+    right: 130px;
+    top: 20px;
+  }
+
+.siguiente {
+  position: relative;
+  font-family: Arial;
+  width: 225px;
+  height: 60px;
+  top: 780px;
+  left: 850px;
+  background-color: grey;
+  color: white;
+  border-radius: 3px;
+  font-family: 'Maven Pro';
+  font-size: 20px;
+
+
+}
+
+.siguiente p {
+
+  position: relative;
+  left: 5px;
+  bottom: 40px;
+}
+
+.hide {
+  display: none;
+}
+
 .contacto {
 
   position: relative;
-  height: 1000px;
+  height: 600px;
   background-color: white;
-  top: 250px;
+  top: 200px;
 }
+
+input[type="name"] {
+
+  width: 300px;
+  height: 40px;
+  position: relative;
+  top: 10px;
+  left: 500px;
+}
+
+input[type="email"] {
+
+  width: 550px;
+  height: 40px;
+  bottom: 36px;
+  position: relative;
+  left: 850px;
+}
+
+input[type="comment"] {
+
+  width: 900px;
+  height: 250px;
+  position: relative;
+  top: 10px;
+  left: 500px;
+}
+
+#pregunta {
+
+  position: relative;
+  text-align: center;
+  top: 50px;
+  font-size: 40px;
+  margin: 30 auto;
+  font-family: "Lucida Handwriting Italic";
+
+}
+
+#contact {
+
+  position: relative;
+  text-align: center;
+  top: 15px;
+  font-size: 60px;
+  font-family: "Lucida Handwriting Italic";
+  color: #ffc65c;
+}
+
 
 footer {
 
   position: relative;
-  height: 1200px;
+  height: 1300px;
   background-color: black;
   top: 250px;
 }
@@ -380,9 +575,73 @@ footer p {
   color: white;
 }
 
+#twitter {
+
+  position: relative;
+  bottom: 98px;
+  left: 1756px;
+  opacity: 0.5;
+}
+
+#insta {
+
+  position: relative;
+  bottom: 95px;
+  left: 1780px;
+  opacity: 0.5;
+}
+
+#face {
+
+  position: relative;
+  bottom: 100px;
+  left: 1606px;
+  opacity: 0.5;
+}
+
 footer .copyright {
   background-color: black;
   display: flex;
-  height: 100px;
-  border-top: 2px solid blue;
+  height: 20px;
+  border-top: 2px solid rgba(26, 34, 68, 0.5);
+}
+
+.copyright p {
+
+  left: 1370px;
+  bottom: 5px;
+
+}
+
+footer ul {
+  position: relative;
+  overflow: hidden;
+  float: right;
+  right: 500px;
+  top: 25px;
+  height: 20px;
+  margin: 0px;
+
+}
+
+
+footer li {
+
+  display: inline;
+  margin-right: 70px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 17px;
+  color: #dcdfe2;
+  opacity: 0.9;
+}
+
+
+
+footer li:hover {
+
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 17px;
+  color: #fcda9a;
+  opacity: 0.9;
+
 }
