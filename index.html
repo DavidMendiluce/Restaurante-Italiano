@@ -26,12 +26,13 @@
             <li id="nosotros">NOSOTROS</li>
 
           </ul>
+
           <div class="logoBig">
-            <img src="img/Logo.png" width="1100px" height="800px">
-          <h2>HORARIO</h2>
-            <p>Lunes a viernes: <span>13:30 - 16:00,  20:30 - 23:30</span></p>
-            <p>Domingos: <span>13:30 - 16:00</span></p>
-          </div>
+           <img src="img/Logo.png" width="1100px" height="800px">
+         <h2>HORARIO</h2>
+           <p>Lunes a viernes: <span>13:30 - 16:00,  20:30 - 23:30</span></p>
+           <p>Domingos: <span>13:30 - 16:00</span></p>
+         </div>
 
 
           </nav>
@@ -51,42 +52,59 @@
         </ul>
 
 
-      <div class="slide" id="entrantesSlide">
+     <div class="container2">
+      <div class="slider" id="entrantesSlide">
           <div>
-            <img src="img/1.jpg" height="300px" width="300px" >
+            <img src="img/1.jpg" height="300px" width="300px" alt="sliderImage" >
           </div>
           <div>
-            <img src="img/2.jpg" height="300px" width="300px">
+            <img src="img/2.jpg" height="300px" width="300px" alt="sliderImage" >
           </div>
           <div>
-            <img src="img/3.jpg" height="300px" width="300px">
+            <img src="img/3.jpg" height="300px" width="300px" alt="sliderImage" >
           </div>
           <div>
+            <img src="img/3.jpg" height="300px" width="300px" alt="sliderImage" >
           </div>
+          <div>
+            <img src="img/3.jpg" height="300px" width="300px" alt="sliderImage" >
+          </div>
+      </div>
+
     </div>
 
     <div class="vinos">
       <h2>VINOS:</h2>
         <ul class="pointer">
-         <li>Tintos</li>
+         <li id="tintos">Tintos</li>
          <li>Blancos</li>
         </ul>
 
     </div>
+         <div class="container3">
+          <div class="slider2" id="entrantesSlide">
+            <div>
+              <img src="img/1.jpg" height="300px" width="300px" alt="sliderImage" >
+            </div>
+            <div>
+              <img src="img/2.jpg" height="300px" width="300px" alt="sliderImage" >
+            </div>
+            <div>
+              <img src="img/3.jpg" height="300px" width="300px" alt="sliderImage" >
+            </div>
+            <div>
+              <img src="img/3.jpg" height="300px" width="300px" alt="sliderImage" >
+            </div>
+            <div>
+              <img src="img/3.jpg" height="300px" width="300px" alt="sliderImage" >
+            </div>
+            <div>
+              <img src="img/3.jpg" height="300px" width="300px" alt="sliderImage" >
+            </div>
+          </div>
+          </div>
 
-          <div class="slide" id="entrantesSlide">
-              <div>
-                <img src="img/1.jpg" height="300px" width="300px" >
-              </div>
-              <div>
-                <img src="img/2.jpg" height="300px" width="300px">
-              </div>
-              <div>
-                <img src="img/3.jpg" height="300px" width="300px">
-              </div>
-              <div>
-              </div>
-        </div>
+
 
   </div>
 
@@ -100,14 +118,28 @@
 
   <div class="elRestaurante">
     <h2>EL RESTAURANTE:</h2>
-      <img src="img/restaurante.jpg" height="800px" width="1400">
+      <div class="container4">
+        <div class="slider3" id="restImg">
+
+          <div>
+            <img src="img/restaurante.jpg" height="800px" width="1400">
+          </div>
+          <div>
+            <img src="img/restaurante.jpg" height="800px" width="1400">
+          </div>
+          <div>
+            <img src="img/restaurante.jpg" height="800px" width="1400">
+          </div>
   </div>
+
+</div>
+</div>
 
 <!-- Reservar -->
 
   <div class="reservar">
 
-        <table>
+        <table id="datosReserva">
 
           <tr>
             <th>
@@ -154,13 +186,54 @@
             <td id="tdComment">
               <p>Comentarios:</p>
               <form>
-                <input placeholder="comentarios..." id="comentarios" type="name" name="name" pattern="[A-Za-z0-9]+">
+                <input placeholder="comentarios..." id="comentarios" type="comentario" name="comentario" pattern="[A-Za-z0-9]+">
 
             </td>
           </tr>
 
+          <tr>
+              <div class="siguiente">
+                <div class="pointer">
+                  <p>Siguinte</p>
+                </div>
+              </div>
+          </tr>
 
+          <table id="datosContacto" class="hide">
 
+            <tr>
+              <th>
+                DATOS DE CONTACTO
+              </th>
+            </tr>
+
+            <tr>
+              <td class="nombre">
+                <p>Nombre y</p>
+                <p>Apellidos</p>
+                <form>
+                  <input placeholder="Nombre y apellidos" id="nombre"  type="text" name="nombre" pattern="[A-Za-z0-9]+">
+
+              </td>
+            </tr>
+
+            <tr>
+              <td class="mail">
+                <p>Email</p>
+                <form>
+                  <input placeholder="email"  id="mail"  type="text" name="emailReserva" pattern="[A-Za-z0-9]+">
+
+              </td>
+            </tr>
+
+            <tr>
+              <td class="telefono">
+                <p>Telefono</p>
+                <form>
+                  <input placeholder="telefono"  id="telefono" type="text" name="telefono" pattern="[A-Za-z0-9]+">
+
+              </td>
+            </tr>
 
     </table>
   </div>
@@ -168,7 +241,8 @@
 <!-- Contactos -->
 
     <div class="contacto">
-      <h2>Alguna pregunta, Contactanos</h2>
+      <p id="pregunta">Alguna pregunta,</p>
+      <p id="contact">CONTACTANOS</p>
 
         <section>
           <form>
@@ -187,8 +261,8 @@
   </body>
 
 <footer>
-  <div class="logoBig" style="height: 1200px;">
-    <img src="img/Logo.png" width="1100px" height="800px">
+  <div class="logoBig" style="height: 1230px;">
+    <img src="img/Logo.png" width="1100px" height="700px">
       <h2>direccion</h2>
         <p>Calle Constitucion, 337</p>
         <p>47001 Valladolid</p>
@@ -198,9 +272,23 @@
         <p>Lunes a viernes: <span>13:30 - 16:00,  20:30 - 23:30</span></p>
         <p>Domingos: <span>13:30 - 16:00</span></p>
 
+        <img id="twitter" src="img/twitter.png">
+        <img id="insta" src="img/insta4.png">
+        <img id="face" src="img/face.png">
+
   </div>
 
-  <div class="copyright"></div>
+  <div class="copyright">
+    <p>Cantina di Gabriello 2019. All right reserved</p>
+    <ul class="pointer">
+      <li id="reservar">RESERVAR</li>
+      <li id="carta">CARTA</li>
+      <li id="vinos">VINOS</li>
+      <li id="restuarante">EL RESTAURANTE</li>
+      <li id="nosotros">NOSOTROS</li>
+
+    </ul>
+  </div>
 </footer>
 <script
   src="https://code.jquery.com/jquery-3.3.1.js"
