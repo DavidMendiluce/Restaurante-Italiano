@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <head>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
@@ -18,12 +19,13 @@
       <nav class="header">
         <div class="logo">
         <img src="img/Logo.png" class="frame" width="300px" height="200px"></a>
-          <ul class="pointer">
-            <li id="reservar">RESERVAR</li>
-            <li id="carta">CARTA</li>
-            <li id="vinos">VINOS</li>
-            <li id="restuarante">EL RESTAURANTE</li>
-            <li id="nosotros">NOSOTROS</li>
+          <ul>
+            <li class="pointer"  id="reservar">RESERVAR</li>
+            <li class="pointer"  id="carta2">CARTA</li>
+            <li class="pointer"  id="vino">VINOS</li>
+            <li class="pointer"  id="restaurante">EL RESTAURANTE</li>
+            <li class="pointer"  id="nosotros">NOSOTROS</li>
+            <li class="pointer"  id="contactos">CONTACTO</li>
 
           </ul>
 
@@ -34,31 +36,41 @@
            <p>Domingos: <span>13:30 - 16:00</span></p>
          </div>
 
-
           </nav>
 
   </header>
 
   <!-- Carta y Vinos -->
-  <div class="carta" style="height: 1000px; background:url(img/Blanca2.jpg)">
+  <div id="carta">
       <h2>PLATOS:</h2>
-        <ul class="pointer">
-          <li id="entrantes">Entrantes</li>
-          <li id="primeros">Pizzas</li>
-          <li id="segundos">Pastas</li>
-          <li id="postres">Lasañas</li>
-          <li id="postres">Carnes</li>
-          <li id="postres">Postres</li>
+        <ul>
+          <li class="pointer"  id="entrantes">Entrantes</li>
+          <li class="pointer"  id="pizzas">Pizzas</li>
+          <li class="pointer"  id="pastas">Pastas</li>
+          <li class="pointer"  id="lasañas">Lasañas</li>
+          <li class="pointer"  id="carnes">Carnes</li>
+          <li class="pointer"  id="postres">Postres</li>
         </ul>
 
 
-     <div class="container2">
-      <div class="slider" id="entrantesSlide">
+
+     <div id="container2">
+      <div class="slider">
+          <div class="sliderImage">
+            <img src="img/entrante1.png" height="300px" width="300px" alt="sliderImage" >
+            <div class="hide">
+              <div class="foodBox">
+                <h3>Surtido Iberico</h3>
+                <p>ingredientes: jamon iberico, queso curado</p>
+                <h1>11€</h1>
+            </div>
+          </div>
+        </div>
           <div>
-            <img src="img/1.jpg" height="300px" width="300px" alt="sliderImage" >
+            <img src="img/3.jpg" height="300px" width="300px" alt="sliderImage" >
           </div>
           <div>
-            <img src="img/2.jpg" height="300px" width="300px" alt="sliderImage" >
+            <img src="img/3.jpg" height="300px" width="300px" alt="sliderImage" >
           </div>
           <div>
             <img src="img/3.jpg" height="300px" width="300px" alt="sliderImage" >
@@ -70,20 +82,149 @@
             <img src="img/3.jpg" height="300px" width="300px" alt="sliderImage" >
           </div>
       </div>
+      </div>
 
-    </div>
+      <div class="hide"  id="container3">
+       <div class="slider1">
+      <div class="sliderImage">
+         <img src="img/1.jpg" height="300px" width="300px" alt="sliderImage" >
+       </div>
+       <div class="sliderImage">
+         <img src="img/2.jpg" height="300px" width="300px" alt="sliderImage" >
+         <div class="hide">
+           <div class="foodBox">
+             <h3>Pizza Peperonni</h3>
+             <p>ingredientes: peperonni, queso, cebolla, tomate</p>
+             <h1>15€</h1>
+         </div>
+         </div>
+       </div>
+       <div class="sliderImage">
+         <img src="img/peperonni.png" height="300px" width="300px" alt="sliderImage" >
+         <div class="hide">
+           <div class="foodBox">
+             <h3>Pizza Peperonni</h3>
+             <p>ingredientes: peperonni, queso, cebolla, tomate</p>
+             <h1>15€</h1>
+         </div>
+         </div>
+       </div>
+       <div class="sliderImage">
+         <img src="img/carbonara.png" height="300px" width="300px" alt="sliderImage" >
+         <div class="hide">
+           <div class="foodBox">
+             <h3>Pizza Carbonara</h3>
+             <p>ingredientes: queso, nata, cebolla, bacon </p>
+             <h1>14€</h1>
+         </div>
+         </div>
+       </div>
+       <div class="sliderImage">
+         <img src="img/3.jpg" height="300px" width="300px" alt="sliderImage" >
+         <div class="hide">
+           <div class="foodBox">
+             <h3>Pizza Peperonni</h3>
+             <p>ingredientes: peperonni, queso, cebolla, tomate</p>
+             <h1>15€</h1>
+         </div>
+         </div>
+       </div>
+       </div>
+       </div>
 
-    <div class="vinos">
-      <h2>VINOS:</h2>
-        <ul class="pointer">
-         <li id="tintos">Tintos</li>
-         <li>Blancos</li>
-        </ul>
 
-    </div>
-         <div class="container3">
-          <div class="slider2" id="entrantesSlide">
+
+       <div class="hide" id="container4">
+        <div class="slider4">
             <div>
+              <img src="img/1.jpg" height="300px" width="300px" alt="sliderImage" >
+            </div>
+            <div>
+              <img src="img/2.jpg" height="300px" width="300px" alt="sliderImage" >
+            </div>
+            <div>
+              <img src="img/3.jpg" height="300px" width="300px" alt="sliderImage" >
+            </div>
+            <div>
+              <img src="img/3.jpg" height="300px" width="300px" alt="sliderImage" >
+            </div>
+            <div>
+              <img src="img/3.jpg" height="300px" width="300px" alt="sliderImage" >
+            </div>
+        </div>
+        </div>
+
+        <div class="hide" id="container5">
+         <div class="slider5">
+             <div>
+               <img src="img/1.jpg" height="300px" width="300px" alt="sliderImage" >
+             </div>
+             <div>
+               <img src="img/2.jpg" height="300px" width="300px" alt="sliderImage" >
+             </div>
+             <div>
+               <img src="img/3.jpg" height="300px" width="300px" alt="sliderImage" >
+             </div>
+             <div>
+               <img src="img/3.jpg" height="300px" width="300px" alt="sliderImage" >
+             </div>
+             <div>
+               <img src="img/3.jpg" height="300px" width="300px" alt="sliderImage" >
+             </div>
+         </div>
+         </div>
+
+         <div class="hide" id="container6">
+          <div class="slider6">
+              <div>
+                <img src="img/1.jpg" height="300px" width="300px" alt="sliderImage" >
+              </div>
+              <div>
+                <img src="img/2.jpg" height="300px" width="300px" alt="sliderImage" >
+              </div>
+              <div>
+                <img src="img/3.jpg" height="300px" width="300px" alt="sliderImage" >
+              </div>
+              <div>
+                <img src="img/3.jpg" height="300px" width="300px" alt="sliderImage" >
+              </div>
+              <div>
+                <img src="img/3.jpg" height="300px" width="300px" alt="sliderImage" >
+              </div>
+          </div>
+          </div>
+
+          <div class="hide" id="container7">
+           <div class="slider7">
+               <div>
+                 <img src="img/1.jpg" height="300px" width="300px" alt="sliderImage" >
+               </div>
+               <div>
+                 <img src="img/2.jpg" height="300px" width="300px" alt="sliderImage" >
+               </div>
+               <div>
+                 <img src="img/3.jpg" height="300px" width="300px" alt="sliderImage" >
+               </div>
+               <div>
+                 <img src="img/3.jpg" height="300px" width="300px" alt="sliderImage" >
+               </div>
+               <div>
+                 <img src="img/3.jpg" height="300px" width="300px" alt="sliderImage" >
+               </div>
+           </div>
+           </div>
+
+
+    <div id="vinos">
+      <h2>VINOS:</h2>
+        <p class="pointer" id="tintos">Tintos</p>
+        <p class="pointer" id="blancos">Blancos</p>
+    </div>
+  </div>
+
+            <div id="container8">
+              <div class="slider2">
+              <div>
               <img src="img/1.jpg" height="300px" width="300px" alt="sliderImage" >
             </div>
             <div>
@@ -106,7 +247,29 @@
 
 
 
-  </div>
+          <div id="container9">
+           <div class="slider8" class="hide">
+             <div>
+               <img src="img/1.jpg" height="300px" width="300px" alt="sliderImage">
+             </div>
+             <div>
+               <img src="img/2.jpg" height="300px" width="300px" alt="sliderImage">
+             </div>
+             <div>
+               <img src="img/3.jpg" height="300px" width="300px" alt="sliderImage">
+             </div>
+             <div>
+               <img src="img/3.jpg" height="300px" width="300px" alt="sliderImage">
+             </div>
+             <div>
+               <img src="img/3.jpg" height="300px" width="300px" alt="sliderImage">
+             </div>
+             <div>
+               <img src="img/3.jpg" height="300px" width="300px" alt="sliderImage">
+             </div>
+           </div>
+           </div>
+
 
 <!-- Nosotros -->
   <div class="nosotros" style="height: 600px; width: cover; background:url(img/bodega1.jpg) no-repeat black">
@@ -119,7 +282,7 @@
   <div class="elRestaurante">
     <h2>EL RESTAURANTE:</h2>
       <div class="container4">
-        <div class="slider3" id="restImg">
+        <div class="slider3">
 
           <div>
             <img src="img/restaurante.jpg" height="800px" width="1400">
@@ -130,14 +293,17 @@
           <div>
             <img src="img/restaurante.jpg" height="800px" width="1400">
           </div>
+        </div>
+      </div>
   </div>
 
-</div>
-</div>
+
+
+
 
 <!-- Reservar -->
 
-  <div class="reservar">
+  <div class="reservar" id="resrervar">
 
         <table id="datosReserva">
 
@@ -186,18 +352,19 @@
             <td id="tdComment">
               <p>Comentarios:</p>
               <form>
-                <input placeholder="comentarios..." id="comentarios" type="comentario" name="comentario" pattern="[A-Za-z0-9]+">
-
+                  <textarea id="comentarios" class="placeHolder" placeholder="Comentarios..."></textarea>
             </td>
           </tr>
+            <p id="wordcount"><span class='characters'>100</span> characters remaining</p>
 
           <tr>
               <div class="siguiente">
                 <div class="pointer">
-                  <p>Siguinte</p>
+                  <p>SIGUIENTE</p>
                 </div>
               </div>
           </tr>
+        </table>
 
           <table id="datosContacto" class="hide">
 
@@ -212,7 +379,7 @@
                 <p>Nombre y</p>
                 <p>Apellidos</p>
                 <form>
-                  <input placeholder="Nombre y apellidos" id="nombre"  type="text" name="nombre" pattern="[A-Za-z0-9]+">
+                  <input placeholder="Nombre y apellidos..." id="nombre"  type="text" name="nombre" pattern="[A-Za-z0-9]+">
 
               </td>
             </tr>
@@ -221,7 +388,7 @@
               <td class="mail">
                 <p>Email</p>
                 <form>
-                  <input placeholder="email"  id="mail"  type="text" name="emailReserva" pattern="[A-Za-z0-9]+">
+                  <input placeholder="email..."  id="mail"  type="text" name="emailReserva" pattern="[A-Za-z0-9]+">
 
               </td>
             </tr>
@@ -230,9 +397,27 @@
               <td class="telefono">
                 <p>Telefono</p>
                 <form>
-                  <input placeholder="telefono"  id="telefono" type="text" name="telefono" pattern="[A-Za-z0-9]+">
+                  <input placeholder="telefono..."  id="telefono" type="text" name="telefono" pattern="[A-Za-z0-9]+">
 
               </td>
+            </tr>
+
+            <tr>
+
+                <div class="siguiente2">
+                  <div class="pointer">
+                    <p>SIGUIENTE</p>
+                  </div>
+                </div>
+            </tr>
+
+            <tr>
+
+                <div class="atras">
+                  <div class="pointer">
+                    <p>ATRAS</p>
+                  </div>
+                </div>
             </tr>
 
     </table>
@@ -244,6 +429,7 @@
       <p id="pregunta">Alguna pregunta,</p>
       <p id="contact">CONTACTANOS</p>
 
+
         <section>
           <form>
             <input placeholder="Tu nombre..." type="name" name="name" pattern="[A-Za-z0-9]+">
@@ -253,9 +439,12 @@
             <input placeholder="Email..." type="email" name="email" pattern="[A-Za-z0-9]+">
 
         <section>
-          <form>
-            <input placeholder="Mensaje" type="comment" name="comment" pattern="[A-Za-z0-9]+">
+            <form>
+          <p id="wordcount2"><span class='characters'>300</span> characters remaining</p>
+          <textarea id="mensaje" class="placeHolder2" placeholder="Mensaje..."></textarea>
+
     </div>
+
 
 
   </body>
