@@ -130,18 +130,38 @@ nav ul {
 
 .foodBox {
   position: relative;
-  bottom: 300px;
+  bottom: 350px;
   display: row;
   word-wrap: break-word;
   justify-content: center;
   align-items: center;
   width: 300px;
-  height: 300px;
+  height: 350px;
   background-color: rgba(0, 0, 0, 0.3);
   color: white;
   text-align: center;
   border-radius: 4px;
   cursor: pointer;
+}
+
+#container6 .foodBox {
+
+  left: 200px;
+}
+
+#container7 .foodBox {
+
+  left: 100px;
+}
+
+#container8 .foodBox {
+
+  left: 100px;
+}
+
+#container9 .foodBox {
+
+  left: 100px;
 }
 
 .foodBox h1 {
@@ -191,7 +211,7 @@ nav ul {
     display: inline-flex;
     float: right;
     bottom: 70px;
-    right: 250px;
+    right: 350px;
     height: 30px;
   }
 
@@ -201,7 +221,7 @@ nav ul {
     font-size: 30px;
     color: #8c763b;
     display: inline-flex;
-    margin: 0 30px;
+    margin: 0 50px;
 
   }
 
@@ -394,17 +414,26 @@ nav ul {
 
 #container6 {
   position: relative;
+  width: 1700px;
+  height: 362px;
+
+}
+
+#container6 img {
+
+  margin-left: 200px;
+}
+#container7 {
+  position: relative;
   left: 100px;
   width: 1700px;
   height: 362px;
 
 }
 
-#container7 {
-  position: relative;
-  left: 100px;
-  width: 1700px;
-  height: 362px;
+#container7 img {
+
+  margin-left: 100px;
 
 }
 
@@ -418,12 +447,25 @@ nav ul {
 
 }
 
+#container8 img {
+
+
+}
+
+
+
 #container9 {
   position: relative;
   left: 100px;
   width: 1700px;
 
 }
+
+#container9 img {
+
+
+}
+
 
 .container4 {
   position: relative;
@@ -488,11 +530,13 @@ nav ul {
     left: 1100px;
     color: white;
     font-family: 'Montserrat' sans-serif;
+    font-size: 18px;
   }
 
   .elRestaurante {
 
     height: 400px;
+
 
   }
 
@@ -707,6 +751,7 @@ nav ul {
 
   .siguiente:hover {
     opacity: 0.9;
+    cursor: pointer;
   }
 
   .siguiente p {
@@ -740,6 +785,7 @@ nav ul {
 
   .siguiente2:hover {
     opacity: 0.9;
+    cursor: pointer;
   }
 
   .atras {
@@ -765,6 +811,7 @@ nav ul {
 
   .atras:hover {
     opacity: 0.9;
+    cursor: pointer;
   }
 
   .hide {
@@ -913,6 +960,14 @@ nav ul {
     left: 1370px;
     bottom: 5px;
 
+  }
+
+  .copyright img {
+    position: relative;
+    top: 18px;
+    left: 830px;
+    width: 35px;
+    height: 35px;
   }
 
   footer ul {
