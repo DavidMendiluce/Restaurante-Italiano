@@ -17,7 +17,7 @@ $(document).ready(function () {
         dots: false,
         infinite: false,
         fade: false,
-        slidesToShow: 4,
+        slidesToShow: 3,
         slidesToScroll: 1,
         arrows: true,
         autoplay: false,
@@ -37,11 +37,11 @@ $(document).ready(function () {
        });
 
       $('.sliderImage').on('mouseover', () => {
-        $('div .sliderImage').find('div').show();
+        $(event.currentTarget).find('div').show();
       });
 
       $('.sliderImage').on('mouseleave', () => {
-        $('div .sliderImage').find('div').hide()
+        $(event.currentTarget).find('div').hide()
       });
 
       $('.siguiente').on('click', () => {
@@ -114,24 +114,6 @@ $(document).ready(function () {
 
       });
 
-      $('#lasañas').on('click', () => {
-        $('#container4').hide()
-        $('#container3').hide()
-        $('#container2').hide()
-        $('#container5').fadeIn(1000)
-        $('#container6').hide()
-        $('#container7').hide()
-        $('.slider5').slick({
-            dots: false,
-            infinite: false,
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            arrows: true,
-            autoplay: false,
-
-         });
-
-      });
 
       $('#carnes').on('click', () => {
         $('#container4').hide()
@@ -143,7 +125,7 @@ $(document).ready(function () {
         $('.slider6').slick({
             dots: false,
             infinite: false,
-            slidesToShow: 4,
+            slidesToShow: 3,
             slidesToScroll: 1,
             arrows: true,
             autoplay: false,
@@ -162,7 +144,7 @@ $(document).ready(function () {
         $('.slider7').slick({
             dots: false,
             infinite: false,
-            slidesToShow: 4,
+            slidesToShow: 3,
             slidesToScroll: 1,
             arrows: true,
             autoplay: false,
@@ -177,7 +159,7 @@ $(document).ready(function () {
         $('.slider2').slick({
             dots: false,
             infinite: false,
-            slidesToShow: 4,
+            slidesToShow: 3,
             slidesToScroll: 1,
             arrows: true,
             autoplay: false,
@@ -192,7 +174,7 @@ $(document).ready(function () {
         $('.slider8').slick({
             dots: false,
             infinite: false,
-            slidesToShow: 4,
+            slidesToShow: 3,
             slidesToScroll: 1,
             arrows: true,
             autoplay: false,
